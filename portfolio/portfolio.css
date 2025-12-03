@@ -1,8 +1,9 @@
 *:root{
     --primary-color:rgb(0,255,255);
+    --primary1-color:rgb(250,235,215);
 }
 header{
-    background-color:var(--primary-color);
+    background-image: url(images/background1.jpg);
     padding: 20px;
 }
 img{
@@ -15,6 +16,7 @@ ul{
     justify-content: space-evenly;
 }
 div a{
+    color:var(--primary1-color);
     text-decoration: none;
     display: flex;
     align-items: center;
