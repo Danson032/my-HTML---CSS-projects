@@ -17,13 +17,15 @@ form {
     max-width: 90%;
 }
 
-.welcome h1 {
+.welcome h1,
+.sign-up h1 {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
-.welcome label {
+.welcome label,
+.sign-up label {
     display: block;
     margin-bottom: 8px;
     color: #555;
@@ -32,16 +34,21 @@ form {
 
 .welcome input[type="text"],
 .welcome input[type="email"],
-.welcome input[type="password"] {
-    width: calc(100% - 20px); /* Account for padding */
+.welcome input[type="password"],
+.sign-up input[type="text"],
+.sign-up input[type="email"],
+.sign-up input[type="number"],
+.sign-up input[type="password"] {
+    width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
 }
 
-.welcome input[type="button"] {
+.welcome input[type="button"],
+.sign-up button {
     background-color: #007bff;
     color: white;
     padding: 12px 20px;
@@ -53,7 +60,8 @@ form {
     margin-top: 10px;
 }
 
-.welcome input[type="button"]:hover {
+.welcome input[type="button"]:hover,
+.sign-up button:hover {
     background-color: #0056b3;
 }
 
@@ -91,7 +99,7 @@ p {
     font-size: 0.9em;
 }
 
-form > a { /* Targets the "Create an account" link directly within the form */
+form>a {
     display: block;
     text-align: center;
     color: #007bff;
@@ -99,6 +107,22 @@ form > a { /* Targets the "Create an account" link directly within the form */
     margin-top: 10px;
 }
 
-form > a:hover {
+form>a:hover {
+    text-decoration: underline;
+}
+
+.member {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.member a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.member a:hover {
     text-decoration: underline;
 }
